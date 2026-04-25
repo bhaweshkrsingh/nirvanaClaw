@@ -8,7 +8,7 @@
 
 ## Why nirvanaClaw?
 
-As of April 2025, no public project implements a true 2-way voice interface to OpenClaw over WhatsApp. Every existing VoiceClaw project requires a dedicated app, a browser UI, or a separate voice channel (Telegram, Discord, WebSocket). nirvanaClaw uses WhatsApp — already on your phone — as the voice interface.
+As of April 2026, no public project implements a true 2-way voice interface to OpenClaw over WhatsApp. Every existing VoiceClaw project requires a dedicated app, a browser UI, or a separate voice channel (Telegram, Discord, WebSocket). nirvanaClaw uses WhatsApp — already on your phone — as the voice interface.
 
 | Feature | nirvanaClaw | Other VoiceClaw projects |
 |---------|-------------|--------------------------|
