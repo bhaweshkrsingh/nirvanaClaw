@@ -222,6 +222,7 @@ If you build on this, I'd love to hear about it. Drop a comment, open an issue, 
 
 **Bhawesh Singh** is a Principal Agentic AI Engineer and founder of **ideaNirvana LLC**, where he builds agentic AI systems that work within your infrastructure — not someone else's cloud.
 
+- Medium: [@b_k_singh](https://medium.com/@b_k_singh)
 - GitHub: [github.com/bhaweshkrsingh](https://github.com/bhaweshkrsingh)
 - LinkedIn: [linkedin.com/in/bhawesh-singh](https://www.linkedin.com/in/bhawesh-singh/)
 - Company: [ideanirvana.com](https://ideanirvana.com)

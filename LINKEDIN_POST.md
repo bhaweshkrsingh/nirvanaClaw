@@ -19,7 +19,7 @@ The whole thing runs on a 2-vCPU / 8GB RAM AWS Lightsail instance ($10/month). Y
 I've open-sourced it as **nirvanaClaw** — named after my company ideaNirvana LLC.
 
 🔗 GitHub: https://github.com/bhaweshkrsingh/nirvanaClaw
-📖 Full writeup on Medium: [your Medium link here]
+📖 Full writeup on Medium: https://medium.com/@b_k_singh/nirvanaclaw-a-2-way-whatsapp-voice-interface-for-openclaw-fully-local-zero-api-cost-bc211968f219
 
 If you're running OpenClaw and a self-hosted LLM, you can have this working in under an hour. Drop a comment if you build on it — I'd love to see where this goes.
 
