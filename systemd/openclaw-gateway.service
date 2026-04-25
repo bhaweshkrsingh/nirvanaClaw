@@ -1,0 +1,22 @@
+[Unit]
+Description=OpenClaw Gateway (v2026.4.23)
+After=network-online.target
+Wants=network-online.target
+StartLimitBurst=5
+StartLimitIntervalSec=60
+
+[Service]
+ExecStart=/usr/bin/node /usr/lib/node_modules/openclaw/dist/index.js gateway --port 18789
+Restart=always
+RestartSec=5
+TimeoutStopSec=30
+TimeoutStartSec=30
+SuccessExitStatus=0 143
+KillMode=control-group
+Environment=HOME=/home/<YOUR_USER>
+Environment=TMPDIR=/tmp
+Environment=PATH=/usr/bin:/usr/local/bin:/bin
+Environment=OPENCLAW_GATEWAY_PORT=18789
+
+[Install]
+WantedBy=default.target

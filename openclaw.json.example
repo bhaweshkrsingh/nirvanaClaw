@@ -1,0 +1,68 @@
+{
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "genlab": {
+        "baseUrl": "http://<YOUR_VLLM_HOST>:8001/v1",
+        "apiKey": "none",
+        "models": [
+          {
+            "id": "qwen3.6-35b",
+            "name": "Qwen3.6 35B",
+            "api": "openai-completions",
+            "input": ["text"]
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": "genlab/qwen3.6-35b",
+      "sandbox": {
+        "mode": "off"
+      },
+      "workspace": "/home/<YOUR_USER>/.openclaw/workspace"
+    }
+  },
+  "channels": {
+    "whatsapp": {
+      "dmPolicy": "pairing",
+      "allowFrom": ["+1XXXXXXXXXX"],
+      "enabled": true
+    }
+  },
+  "messages": {
+    "tts": {
+      "auto": "inbound",
+      "provider": "microsoft",
+      "maxTextLength": 4096,
+      "providers": {
+        "microsoft": {
+          "voice": "en-US-AriaNeural"
+        }
+      }
+    }
+  },
+  "tools": {
+    "media": {
+      "audio": {
+        "enabled": true,
+        "models": [
+          {
+            "type": "cli",
+            "command": "/usr/bin/python3",
+            "args": ["/home/<YOUR_USER>/nirvanaClaw/whisper_transcribe.py", "{{MediaPath}}"]
+          }
+        ]
+      }
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "<GENERATE_WITH: openssl rand -hex 24>"
+    }
+  }
+}
